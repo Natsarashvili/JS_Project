@@ -33,3 +33,5 @@ function password_checker(){
     document.getElementById("pass").addEventListener("input", password_checker);
 }
 password_checker()
+
+
