@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ჩვენ შესახებ</title>
+    <title>რეგისტრაცია</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="zu.PNG"> 
 </head>
@@ -66,17 +66,18 @@
     <main>
         <div >
             <form id="registr">
-            ელ-ფოსტა <br><br> <input type="text" id="email"> <br>
-            პაროლი <br><br> <input type="password" id="pass"><br>
+                <h1 style="text-align: center;">რეგისტრაცია</h1><br>
+            ელ-ფოსტა <br><br> <input type="text" id="email" required> <br>
+            პაროლი <br><br> <input type="password" id="pass" required><br>
             <div id="pass_check"></div>
-            დაადასტურეთ პაროლი <br><br> <input type="password"><br>
-            რეგისტრაციის თარიღი <br><br> <input type="date"><br>
-            მომხმარებლის სახელი <br><br> <input type="text"><br>
-            ქვეყანა <br><br> <input type="text"><br>
-            ქალაქი <br><br> <input type="text"><br>
-            მობილურის ნომერი <br><br> <input type="number"><br><br>
-            <button id="regist_button" onclick="email_checker()">რეგისტრაცია</button>
-            </form>
+            დაადასტურეთ პაროლი <br><br> <input type="password" id="pass_2" required><br>
+            რეგისტრაციის თარიღი <br><br> <input type="date" required><br>
+            მომხმარებლის სახელი <br><br> <input type="text" required><br>
+            ქვეყანა <br><br> <input type="text" required><br>
+            ქალაქი <br><br> <input type="text" required><br>
+            მობილურის ნომერი <br><br> <input type="number" required><br><br>
+           <button id="regist_button"  onclick="email_checker(); password_match()">რეგისტრაცია</button>           
+           </form>
         </div>
     </main>
 

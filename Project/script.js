@@ -1,9 +1,25 @@
 function email_checker(){
     var a=document.getElementById("email").value
     if(a.indexOf("@") == -1){
+        alert("ელ-ფოსტა არასწორი ფორმატითაა ჩაწერილი")
+    }
+    var parts = a.split('@');
+    var domain = parts[1];
+    var domainParts = domain.split('.');
+    if(domainParts[domainParts.length-1].length < 2){
         alert("ელ-ფოსტა არასწორი ფორმატითაა ჩაწერილი");
     }
 }
+
+
+function password_match(){
+  var a=document.getElementById("pass").value
+  var b=document.getElementById("pass_2").value
+  if(a!==b){
+    alert("პაროლები არ ემთხვევა")
+  }
+}
+
 
 function password_checker(){
     var a=document.getElementById("pass").value
@@ -33,5 +49,3 @@ function password_checker(){
     document.getElementById("pass").addEventListener("input", password_checker);
 }
 password_checker()
-
-
